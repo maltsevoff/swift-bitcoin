@@ -33,7 +33,7 @@ let package = Package(
         .package(url: "https://github.com/swift-bitcoin/swift-lmdb", from: "6.2.1"),
         .package(url: "https://github.com/swiftlang/swift-docc-plugin", from: "1.0.0"),
         .package(url: "https://github.com/apple/swift-argument-parser", from: "1.0.0"),
-        .package(url: "https://github.com/apple/swift-binary-parsing", .upToNextMinor(from: "0.0.1")),
+        .package(url: "https://github.com/apple/swift-binary-parsing", revision: "13532cf777cbd2e112954ccc9ada37edb06fe84a"),
         .package(url: "https://github.com/apple/swift-system.git", from: "1.0.0"),
         .package(url: "https://github.com/apple/swift-atomics.git", from: "1.0.0"),
         .package(url: "https://github.com/apple/swift-collections", from: "1.0.0"),
