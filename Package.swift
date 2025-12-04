@@ -49,7 +49,7 @@ let package = Package(
         .target(name: "Bitcoin",
             dependencies: ["BitcoinRPC", "BitcoinTransport", "BitcoinBlockchain", "BitcoinPSBT", "BitcoinWallet", "BitcoinMiniscript", "BitcoinBase", "BitcoinCrypto"],
             path: "src/bitcoin"),
-        .target(name: "BitcoinRPC", dependencies: ["BitcoinTransport", "BitcoinBlockchain", "BitcoinPSBT", "BitcoinWallet", "BitcoinBase", "BitcoinCrypto", "JSONRPC"], path: "src/bitcoin-rpc"),
+        .target(name: "BitcoinRPC", dependencies: ["BitcoinTransport", "BitcoinBlockchain", "BitcoinPSBT", "BitcoinWallet", "BitcoinBase", "BitcoinCrypto", "BSJSONRPC"], path: "src/bitcoin-rpc"),
         .target(
             name: "BitcoinTransport",
             dependencies: ["BitcoinBlockchain", "BitcoinBase", "BitcoinCrypto",
@@ -86,10 +86,10 @@ let package = Package(
         .target(
             name: "NIOJSONRPC",
             dependencies: [
-                "JSONRPC",
+                "BSJSONRPC",
                 .product(name: "NIOCore", package: "swift-nio")],
             path: "src/nio-json-rpc"),
-        .target(name: "JSONRPC", path: "src/json-rpc"),
+        .target(name: "BSJSONRPC", path: "src/json-rpc"),
         .target(name: "LMDB", dependencies: [
             .product(name: "CLMDB", package: "swift-lmdb"),
             .product(name: "SystemPackage", package: "swift-system"),
@@ -131,7 +131,7 @@ let package = Package(
         // Executables
         .executableTarget(
             name: "BitcoinNode", dependencies: [
-                "BitcoinRPC", "BitcoinTransport", "BitcoinBlockchain", "BitcoinBase", "BitcoinCrypto", "NIOJSONRPC", "JSONRPC",
+                "BitcoinRPC", "BitcoinTransport", "BitcoinBlockchain", "BitcoinBase", "BitcoinCrypto", "NIOJSONRPC", "BSJSONRPC",
                 .product(name: "Logging", package: "swift-log"),
                 .product(name: "Metrics", package: "swift-metrics"),
                 .product(name: "StatsdClient", package: "swift-statsd-client"),
@@ -148,7 +148,7 @@ let package = Package(
             resources: [.copy("dummy")], plugins: [.plugin(name: "CopyConfigSources")]),
         .executableTarget(
             name: "BitcoinUtility", dependencies: [
-                "BitcoinTransport", "BitcoinBlockchain", "BitcoinWallet", "BitcoinBase", "BitcoinCrypto", "NIOJSONRPC", "JSONRPC",
+                "BitcoinTransport", "BitcoinBlockchain", "BitcoinWallet", "BitcoinBase", "BitcoinCrypto", "NIOJSONRPC", "BSJSONRPC",
                 .product(name: "ArgumentParser", package: "swift-argument-parser"),
                 .product(name: "NIOCore", package: "swift-nio"),
                 .product(name: "NIOPosix", package: "swift-nio"),

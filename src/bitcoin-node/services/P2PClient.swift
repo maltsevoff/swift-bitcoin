@@ -1,7 +1,7 @@
 import Foundation
 import NIOPosix
 import BitcoinTransport
-import JSONRPC
+import BSJSONRPC
 import AsyncAlgorithms
 import ServiceLifecycle
 import NIOCore

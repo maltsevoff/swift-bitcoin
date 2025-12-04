@@ -1,7 +1,7 @@
 import Foundation
 import NIOCore
 import NIOPosix
-import JSONRPC
+import BSJSONRPC
 import NIOJSONRPC
 
 public func sendRPC(host: String, port: Int, request: JSONRPCRequest) async throws {

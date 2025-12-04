@@ -1,7 +1,7 @@
 import Foundation
 import NIOCore
 import NIOFoundationCompat
-import JSONRPC
+import BSJSONRPC
 
 /// Client side request/response coder.
 struct ResponseDecoder: ByteToMessageDecoder {

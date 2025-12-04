@@ -1,5 +1,5 @@
 import Foundation
-import JSONRPC
+import BSJSONRPC
 import BitcoinBlockchain
 
 extension GetMempoolRPC {

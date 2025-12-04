@@ -1,6 +1,6 @@
 import ArgumentParser
 import Foundation
-import JSONRPC
+import BSJSONRPC
 
 struct SendCommand: AsyncParsableCommand {
 

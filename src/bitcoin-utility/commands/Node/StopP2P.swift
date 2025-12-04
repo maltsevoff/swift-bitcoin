@@ -1,5 +1,5 @@
 import ArgumentParser
-import JSONRPC
+import BSJSONRPC
 
 struct StopP2P: AsyncParsableCommand {
 

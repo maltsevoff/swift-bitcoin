@@ -1,6 +1,6 @@
 import Foundation
 import NIOCore
-import JSONRPC
+import BSJSONRPC
 
 struct ResponseEncoder: MessageToByteEncoder, Sendable {
 

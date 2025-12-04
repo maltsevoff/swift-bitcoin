@@ -4,7 +4,7 @@ import ServiceLifecycle
 import NIOCore
 import NIOPosix
 
-import JSONRPC
+import BSJSONRPC
 import NIOJSONRPC
 import BitcoinCrypto
 import BitcoinBase

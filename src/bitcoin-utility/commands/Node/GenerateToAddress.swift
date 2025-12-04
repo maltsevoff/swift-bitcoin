@@ -1,5 +1,5 @@
 import ArgumentParser
-import JSONRPC
+import BSJSONRPC
 import BitcoinBlockchain // BlockchainService.Config.defaultMaxTries
 
 struct GenerateToAddress: AsyncParsableCommand {

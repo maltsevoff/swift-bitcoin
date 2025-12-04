@@ -1,5 +1,5 @@
 import ArgumentParser
-import JSONRPC
+import BSJSONRPC
 import BitcoinTransport // NodeNetwork
 
 struct StartP2P: AsyncParsableCommand {

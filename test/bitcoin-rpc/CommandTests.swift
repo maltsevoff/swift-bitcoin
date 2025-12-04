@@ -3,7 +3,7 @@ import BitcoinCrypto
 import Foundation
 import BitcoinBlockchain
 import BitcoinTransport
-import JSONRPC
+import BSJSONRPC
 import BitcoinRPC
 
 struct CommandTests {

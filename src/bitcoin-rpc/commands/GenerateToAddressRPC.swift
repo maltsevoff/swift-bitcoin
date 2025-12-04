@@ -1,5 +1,5 @@
 import Foundation
-import JSONRPC
+import BSJSONRPC
 import BitcoinCrypto
 import BitcoinBlockchain
 import BitcoinWallet

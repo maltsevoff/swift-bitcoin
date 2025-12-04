@@ -1,6 +1,6 @@
 import Foundation
 import ArgumentParser
-import JSONRPC
+import BSJSONRPC
 
 struct DisconnectPeer: AsyncParsableCommand {
 

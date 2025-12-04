@@ -1,5 +1,5 @@
 import ArgumentParser
-import JSONRPC
+import BSJSONRPC
 
 struct GetBlock: AsyncParsableCommand {
 
